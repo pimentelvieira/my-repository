@@ -25,6 +25,7 @@ public class TesteConta {
 		
 		//No método persist a conta passa a ser Managed, o persist além de incluir no banco, também passa o objeto do
 		//estado Transient para o estado Managed
+		//Estado transient --> persist() --> Estado managed
 		em.persist(conta);
 		
 		//Se a linha abaixo rodar, acontecerá um update, já que o estado do objeto é Managed
